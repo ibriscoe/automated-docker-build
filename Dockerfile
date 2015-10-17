@@ -6,12 +6,12 @@
 FROM ubuntu:14.04
 
 # Author: Dr. Peter
-MAINTAINER Dr. Peter <peterindia@gmail.com>
+MAINTAINER I Briscoe <ijbriscoe@googlemail.com>
 
 # create 'mynewdir' and 'mynewfile'
 RUN mkdir mynewdir
 RUN touch /mynewdir/mynewfile
 
 # Write the message in file
-RUN echo 'this is my new container to make image and then push to hub' \
+RUN echo 'This is my new container to make image and then push to hub; also set up to do an automated build when pushed to GitHub' \
  >/mynewdir/mynewfile
